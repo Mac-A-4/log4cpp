@@ -40,22 +40,22 @@ namespace mdalvz {
 
 			template <class ... T>
 			void v(const std::string& tag, T ... tail) {
-				write(Level::VERBOSE, tail ...);
+				write(Level::VERBOSE, tag, tail ...);
 			}
 
 			template <class ... T>
 			void d(const std::string& tag, T ... tail) {
-				write(Level::DEBUG, tail ...);
+				write(Level::DEBUG, tag, tail ...);
 			}
 
 			template <class ... T>
 			void i(const std::string& tag, T ... tail) {
-				write(Level::INFO, tail ...);
+				write(Level::INFO, tag, tail ...);
 			}
 
 			template <class ... T>
 			void e(const std::string& tag, T ... tail) {
-				write(Level::ERROR, tail ...);
+				write(Level::ERROR, tag, tail ...);
 			}
 
 		};
